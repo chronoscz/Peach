@@ -15,7 +15,7 @@ below the code should be comprehensible. Except the keyboard handling. Don't ask
 
 Peach is written using the Free Pascal / Lazarus system, downloadable [here](https://sourceforge.net/projects/lazarus/).
 
-Unzip the zip file. The code for the launcher is accessible by opening \Peach\Peach.lpi in the Lazarus IDE, and the main code is accessible by opening Peach\Peach\Peach.lpi.
+Download and unzip the zip file. The code for the launcher is accessible by opening \Peach\Peach.lpi in the Lazarus IDE, and the main code is accessible by opening Peach\Peach\Peach.lpi.
 
 
 #### Directory structure
