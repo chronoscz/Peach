@@ -27,7 +27,7 @@ This inner folder contains the main code (described in the "Units and packages" 
 - Grammar plugins : the user-accessible folder for keeping .grm files in.
 - Installation : this is where the Publish feature of Peach outputs setup files.
 - Internationalization : where we keep the .lng files.
-- Licenses : the license for Peach and the full text of the license for the auxiliary programs.
+- Licenses : the license for Peach and the full text of the licenses for the auxiliary programs.
 - Resources : all the bits Peach needs. This will be cataloged separately below. Invisible to the end-user.
 - richmemo-master : Contains the RichMemo component.
 - Vocab lists : the user-accessible folder for keeping .vcb files in.
@@ -35,7 +35,7 @@ This inner folder contains the main code (described in the "Units and packages" 
 
 See the section on "file types" below for an explanation of .grm, .lng, and .vcb files.
 
-The Resources folder has the following subdirectories:
+The Resources directory has the following subdirectories:
 
 - Balabolka : Contains the Balabolka utility for using SAPI5 voices.
 - eSpeak NG : An alternative way of making Peach talk.
