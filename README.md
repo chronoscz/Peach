@@ -31,7 +31,6 @@ This inner folder contains the main code (described in the "Units and packages" 
 - Internationalization : where we keep the .lng files.
 - Licenses : the license for Peach and the full text of the licenses for the auxiliary programs.
 - Resources : all the bits Peach needs. This will be cataloged separately below. Invisible to the end-user.
-- richmemo-master : Contains the RichMemo component.
 - Vocab lists : the user-accessible folder for keeping .vcb files in.
 - Workspace and Workspace 2 : these are folders used by the Publish feature and the updater, and are invisible to the end-user.
 
