@@ -181,20 +181,21 @@ text files:
 
   ... and so on.
 
-  However, the topics 1 .. 9 form a header to the file, invisible to the end-
+  However, the topics 0 .. 9 form a header to the file, invisible to the end-
   user, telling Peach how to interact with the file. Here is a quick summary of
   what they contain, together with the name of the constant Peach uses to refer
   to each of them.
 
-1. lang_names : The names of the languages, the direction they're written in, and info for getting audio.
-2. about_vlist : A help message for when the end-user goes to Help and asks to be told about the specific .vcb file they're using.
-3. keys_help : A help message for the keyboard settings.
-4. lang1_keys : Keyboard settings for language 1.
-5. lang2_keys : Keyboard settings for language 2.
-6. q_formats : Formats for asking the end-user questions.
-7. test_overrides : Override the user's choices in the Options menu.
-8. appearance_overrides : Ditto
-9. lockdown_overrides : Ditto
+0. seSettingsHeader : Contains nothing but a topic heading saying Settings, for my convenience.
+1. seLangNames : The names of the languages, the direction they're written in, and info for getting audio.
+2. seAboutVlist : A help message for when the end-user goes to Help and asks to be told about the specific .vcb file they're using.
+3. seKeysHelp : A help message for the keyboard settings.
+4. seLang1Keys : Keyboard settings for language 1.
+5. seLang2Keys : Keyboard settings for language 2.
+6. seQuestionFormats : Formats for asking the end-user questions.
+7. seTestOverrides : Override the user's choices in the Options menu.
+8. seAppearanceOverrides : Ditto
+9. seLockdownOverrides : Ditto
 
   Much of the text in the Settings section, including all of the topic headings,
   consists of tokens to be translated in the light of an .lng file.
