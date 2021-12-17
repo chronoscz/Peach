@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="12"/>
+    <Version Value="11"/>
     <PathDelim Value="\"/>
     <General>
-      <Flags>
-        <CompatibilityMode Value="True"/>
-      </Flags>
       <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
       <Title Value="Peach"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
-      <Icon Value="0"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
@@ -19,8 +19,39 @@
       <MinorVersionNr Value="10"/>
       <BuildNr Value="2"/>
     </VersionInfo>
-    <BuildModes Count="1">
-      <Item1 Name="Default" Default="True"/>
+    <BuildModes Count="2">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="Peach"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf2Set"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -31,21 +62,28 @@
         <Mode0 Name="default"/>
       </Modes>
     </RunParams>
-    <RequiredPackages Count="4">
+    <RequiredPackages Count="5">
       <Item1>
-        <PackageName Value="WordMemo"/>
+        <PackageName Value="PeachPackage"/>
+        <DefaultFilename Value="Packages\Peach\PeachPackage.lpk" Prefer="True"/>
       </Item1>
       <Item2>
-        <PackageName Value="PythonPackage"/>
+        <PackageName Value="WordMemo"/>
+        <DefaultFilename Value="Packages\WordMenu\wordmemo.lpk" Prefer="True"/>
       </Item2>
       <Item3>
-        <PackageName Value="richmemopackage"/>
+        <PackageName Value="PythonPackage"/>
+        <DefaultFilename Value="Packages\PythonPackage\pythonpackage.lpk" Prefer="True"/>
       </Item3>
       <Item4>
-        <PackageName Value="LCL"/>
+        <PackageName Value="richmemopackage"/>
+        <DefaultFilename Value="Packages\richmemo\richmemopackage.lpk" Prefer="True"/>
       </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
     </RequiredPackages>
-    <Units Count="25">
+    <Units Count="22">
       <Unit0>
         <Filename Value="Peach.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -120,98 +158,83 @@
         <UnitName Value="AssignHomework"/>
       </Unit9>
       <Unit10>
-        <Filename Value="internet.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Internet"/>
-      </Unit10>
-      <Unit11>
         <Filename Value="register.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormRegister"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Register"/>
-      </Unit11>
-      <Unit12>
+      </Unit10>
+      <Unit11>
         <Filename Value="studentclasses.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSClasses"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="StudentClasses"/>
-      </Unit12>
-      <Unit13>
+      </Unit11>
+      <Unit12>
         <Filename Value="teacherclasses.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormStudents"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TeacherClasses"/>
-      </Unit13>
-      <Unit14>
+      </Unit12>
+      <Unit13>
         <Filename Value="testresults.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormResults"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TestResults"/>
-      </Unit14>
-      <Unit15>
+      </Unit13>
+      <Unit14>
         <Filename Value="interposeredit.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="InterposerEdit"/>
-      </Unit15>
-      <Unit16>
-        <Filename Value="rminlinepicture.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="RMInlinePicture"/>
-      </Unit16>
-      <Unit17>
+      </Unit14>
+      <Unit15>
         <Filename Value="iconupdater.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="IconUpdater"/>
-      </Unit17>
-      <Unit18>
+      </Unit15>
+      <Unit16>
         <Filename Value="versionsupport.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="VersionSupport"/>
-      </Unit18>
-      <Unit19>
-        <Filename Value="applanguage.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="AppLanguage"/>
-      </Unit19>
-      <Unit20>
+      </Unit16>
+      <Unit17>
         <Filename Value="commonstringfunctions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="CommonStringFunctions"/>
-      </Unit20>
-      <Unit21>
+      </Unit17>
+      <Unit18>
         <Filename Value="assignments.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormAssignments"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Assignments"/>
-      </Unit21>
-      <Unit22>
+      </Unit18>
+      <Unit19>
         <Filename Value="fontinfo.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="FontInfo"/>
-      </Unit22>
-      <Unit23>
+      </Unit19>
+      <Unit20>
         <Filename Value="licenses.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormLicenses"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Licenses"/>
-      </Unit23>
-      <Unit24>
+      </Unit20>
+      <Unit21>
         <Filename Value="pythonfunctions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="PythonFunctions"/>
-      </Unit24>
+      </Unit21>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -224,10 +247,24 @@
       <IncludeFiles Value="$(ProjOutDir)"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <VerifyObjMethodCallValidity Value="True"/>
+    </CodeGeneration>
     <Linking>
       <Debugging>
-        <GenerateDebugInfo Value="False"/>
         <DebugInfoType Value="dsDwarf2Set"/>
+        <UseExternalDbgSyms Value="True"/>
       </Debugging>
       <Options>
         <Win32>
