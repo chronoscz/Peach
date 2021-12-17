@@ -5,7 +5,7 @@ unit Publish;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls, 
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
   ExtDlgs;
 
 type
@@ -30,8 +30,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure ButtonChangeIconClick(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
-    procedure ListBox1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState
-      );
+    procedure ListBox1KeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
   private
 
   public
@@ -50,33 +49,34 @@ implementation
 
 procedure TFormPublish.ComboBox1Change(Sender: TObject);
 begin
-if ComboBox1.ItemIndex <> - 1 then
-   begin
-   ListBox1.Items.Add(ComboBox1.Items[ComboBox1.ItemIndex]);
-   ComboBox1.Caption := '';
-   end;
+  if ComboBox1.ItemIndex <> -1 then
+  begin
+    ListBox1.Items.Add(ComboBox1.Items[ComboBox1.ItemIndex]);
+    ComboBox1.Caption := '';
+  end;
 end;
 
-procedure TFormPublish.ListBox1KeyDown(Sender: TObject; var Key: Word;
+procedure TFormPublish.ListBox1KeyDown(Sender: TObject; var Key: word;
   Shift: TShiftState);
 begin
-if Key in [8, 46] then ListBox1.DeleteSelected;
+  if Key in [8, 46] then
+    ListBox1.DeleteSelected;
 end;
 
 procedure TFormPublish.Button1Click(Sender: TObject);
-var f: TextFile;
-    GUID: TGUID;
-    i: integer;
+var
+  f: TextFile;
+  GUID: TGUID;
+  i: integer;
 begin
-Close;
-ModalResult := mrOK;
+  Close;
+  ModalResult := mrOk;
 end;
 
 procedure TFormPublish.ButtonChangeIconClick(Sender: TObject);
 begin
-  If OpenPictureDialog1.Execute then
-     Image1.Picture.LoadFromFile(OpenPictureDialog1.Filename);
+  if OpenPictureDialog1.Execute then
+    Image1.Picture.LoadFromFile(OpenPictureDialog1.Filename);
 end;
 
 end.
-

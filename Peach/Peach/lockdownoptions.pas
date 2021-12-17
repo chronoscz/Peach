@@ -36,20 +36,19 @@ implementation
 
 procedure TFormLO.FormActivate(Sender: TObject);
 begin
-FormLO.Width := FormLO.LockdownGroup.Width + 24;
+  FormLO.Width := FormLO.LockdownGroup.Width + 24;
 end;
 
 procedure TFormLO.Button1Click(Sender: TObject);
 begin
-Close;
-ModalResult := mrOK;
+  Close;
+  ModalResult := mrOk;
 end;
 
 procedure TFormLO.Button2Click(Sender: TObject);
 begin
-Close;
-ModalResult := mrCancel;
+  Close;
+  ModalResult := mrCancel;
 end;
 
 end.
-

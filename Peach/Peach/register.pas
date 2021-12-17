@@ -46,18 +46,17 @@ implementation
 
 procedure TFormRegister.ButtonOKClick(Sender: TObject);
 begin
-ModalResult := mrOK;
+  ModalResult := mrOk;
 end;
 
 procedure TFormRegister.FormActivate(Sender: TObject);
 begin
-Height := ButtonOK.Top + ButtonOK.Height + 12;
+  Height := ButtonOK.Top + ButtonOK.Height + 12;
 end;
 
 procedure TFormRegister.ButtonCancelClick(Sender: TObject);
 begin
-ModalResult := mrCancel;
+  ModalResult := mrCancel;
 end;
 
 end.
-

@@ -21,17 +21,17 @@ implementation
 
 { TRichMemoInlinePicture }
 
-  constructor TRichMemoInlinePicture.Create(Apicture: TPicture);
-  begin
-    inherited Create;
-    Pic := APicture;
-  end;
+constructor TRichMemoInlinePicture.Create(Apicture: TPicture);
+begin
+  inherited Create;
+  Pic := APicture;
+end;
 
-  procedure TRichMemoInlinePicture.Draw(Canvas: TCanvas; const ASize: TSize);
-  begin
-    inherited Draw(Canvas, ASize);
-    Canvas.Draw(0, 0, Pic.Graphic);
-  end;
+procedure TRichMemoInlinePicture.Draw(Canvas: TCanvas; const ASize: TSize);
+begin
+  inherited Draw(Canvas, ASize);
+  Canvas.Draw(0, 0, Pic.Graphic);
+end;
 
 end.
 

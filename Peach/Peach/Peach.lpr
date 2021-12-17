@@ -2,22 +2,38 @@ program Peach;
 
 {$mode objfpc}{$H+}
 
-uses
-  {$IFDEF UNIX}{$IFDEF UseCThreads}
-  cthreads,
-  {$ENDIF}{$ENDIF}
+uses {$IFDEF UNIX} {$IFDEF UseCThreads}
+  cthreads, {$ENDIF} {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, main, 
-SearchAndReplace, AppearanceOptions, LockdownOptions, Publish, Vocab, QAUnit,
-  SignIn, AssignHomework, Internet, Register, 
-StudentClasses, TeacherClasses, Assignments,
-  TestResults, InterposerEdit, RMInlinePicture, IconUpdater, VersionSupport, 
-AppLanguage, CommonStringFunctions, FontInfo, Licenses, PythonFunctions;
+  Forms,
+  main,
+  SearchAndReplace,
+  AppearanceOptions,
+  LockdownOptions,
+  Publish,
+  Vocab,
+  QAUnit,
+  SignIn,
+  AssignHomework,
+  Internet,
+  Register,
+  StudentClasses,
+  TeacherClasses,
+  Assignments,
+  TestResults,
+  InterposerEdit,
+  RMInlinePicture,
+  IconUpdater,
+  VersionSupport,
+  AppLanguage,
+  FontInfo,
+  Licenses,
+  PythonFunctions;
 
 {$R *.res}
 
 begin
-  RequireDerivedFormResource:=True;
+  RequireDerivedFormResource := True;
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TFormFind, FormFind);
@@ -35,4 +51,3 @@ begin
   Application.CreateForm(TFormLicenses, FormLicenses);
   Application.Run;
 end.
-

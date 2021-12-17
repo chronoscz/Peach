@@ -20,8 +20,7 @@ type
     LabelUsername: TLabel;
     procedure ButtonCancelClick(Sender: TObject);
     procedure ButtonOKClick(Sender: TObject);
-    procedure EditPasswordKeyUp(Sender: TObject; var Key: Word;
-      Shift: TShiftState);
+    procedure EditPasswordKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormActivate(Sender: TObject);
   private
 
@@ -40,24 +39,24 @@ implementation
 
 procedure TFormSignIn.ButtonOKClick(Sender: TObject);
 begin
-ModalResult := mrOK;
+  ModalResult := mrOk;
 end;
 
-procedure TFormSignIn.EditPasswordKeyUp(Sender: TObject; var Key: Word;
+procedure TFormSignIn.EditPasswordKeyUp(Sender: TObject; var Key: word;
   Shift: TShiftState);
 begin
-if Key = 13 then ButtonOKClick(EditPassword);
+  if Key = 13 then
+    ButtonOKClick(EditPassword);
 end;
 
 procedure TFormSignIn.FormActivate(Sender: TObject);
 begin
-EditUsername.SetFocus;
+  EditUsername.SetFocus;
 end;
 
 procedure TFormSignIn.ButtonCancelClick(Sender: TObject);
 begin
-ModalResult := mrCancel;
+  ModalResult := mrCancel;
 end;
 
 end.
-
