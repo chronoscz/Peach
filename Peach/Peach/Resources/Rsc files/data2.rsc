@@ -1,4 +1,4 @@
-C:\Users\owner\Documents\Peach\Peach\Vocab lists\Peach for wizards.vcb
+
 3
 0
 0
@@ -9,4 +9,4 @@ Cambria
 Arbit
 12
 NNNNNNNNNNNN
-NNNNNNNNNNYYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+

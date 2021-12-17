@@ -69,7 +69,7 @@
       </Item1>
       <Item2>
         <PackageName Value="WordMemo"/>
-        <DefaultFilename Value="Packages\WordMenu\wordmemo.lpk" Prefer="True"/>
+        <DefaultFilename Value="Packages\WordMemo\wordmemo.lpk" Prefer="True"/>
       </Item2>
       <Item3>
         <PackageName Value="PythonPackage"/>
