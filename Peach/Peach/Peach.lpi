@@ -62,26 +62,30 @@
         <Mode0 Name="default"/>
       </Modes>
     </RunParams>
-    <RequiredPackages Count="5">
+    <RequiredPackages Count="6">
       <Item1>
-        <PackageName Value="PeachPackage"/>
-        <DefaultFilename Value="Packages\Peach\PeachPackage.lpk" Prefer="True"/>
+        <PackageName Value="richmemo_design"/>
+        <DefaultFilename Value="Packages\richmemo\ide\richmemo_design.lpk" Prefer="True"/>
       </Item1>
       <Item2>
-        <PackageName Value="WordMemo"/>
-        <DefaultFilename Value="Packages\WordMemo\wordmemo.lpk" Prefer="True"/>
+        <PackageName Value="PeachPackage"/>
+        <DefaultFilename Value="Packages\Peach\PeachPackage.lpk" Prefer="True"/>
       </Item2>
       <Item3>
-        <PackageName Value="PythonPackage"/>
-        <DefaultFilename Value="Packages\PythonPackage\pythonpackage.lpk" Prefer="True"/>
+        <PackageName Value="WordMemo"/>
+        <DefaultFilename Value="Packages\WordMemo\wordmemo.lpk" Prefer="True"/>
       </Item3>
       <Item4>
-        <PackageName Value="richmemopackage"/>
-        <DefaultFilename Value="Packages\richmemo\richmemopackage.lpk" Prefer="True"/>
+        <PackageName Value="PythonPackage"/>
+        <DefaultFilename Value="Packages\PythonPackage\pythonpackage.lpk" Prefer="True"/>
       </Item4>
       <Item5>
-        <PackageName Value="LCL"/>
+        <PackageName Value="richmemopackage"/>
+        <DefaultFilename Value="Packages\richmemo\richmemopackage.lpk" Prefer="True"/>
       </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
     </RequiredPackages>
     <Units Count="21">
       <Unit0>
